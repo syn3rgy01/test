@@ -1,0 +1,17 @@
+name: ConfigureRegionalSettingsUK
+summary: Set UK regional settings on the Dev Box.
+description: Configures system locale, display language, and time zone to United Kingdom (en-GB).
+templatePath: regionalsettings.ps1  # Path to your script file
+parameters: 
+  - id: "locale"
+    name: "System Locale"
+    description: "Sets the system locale to en-GB"
+    type: "string"
+    default: "en-GB"
+  - id: "timezone"
+    name: "Time Zone"
+    description: "Sets time zone to GMT Standard Time"
+    type: "string"
+    default: "GMT Standard Time"
+
+runner: PowerShell
